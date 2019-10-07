@@ -1,3 +1,10 @@
+Repositorio:
+
+https://github.com/pdsbocinas/pokemons-pablo-sanchez
+
+
+-------
+
 Users:
 
 ADMIN
