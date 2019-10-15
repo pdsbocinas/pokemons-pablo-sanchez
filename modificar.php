@@ -33,7 +33,7 @@
   <main>
     <?php include('./includes/header.php'); ?>
     <div class="container">
-    <form action="actionModificar.php" method="POST">
+    <form action="actionModificar.php" method="POST" enctype="multipart/form-data">
       <input type='hidden' name='id' value="<?php echo $id ?>" />
       <div class="form-group">
         <label for="nombre">Nombre</label>
@@ -48,8 +48,8 @@
         <input type="text" class="form-control" value="<?php echo $pokemon['habilidad_oculta'] ?>" required name="habilidad_oculta" id="habilidad" placeholder="Habilidad Oculta">
       </div>
       <div class="form-group">
-        <label for="habilidad">Imagen:</label>
-        <input type="text" class="form-control" value="<?php echo $pokemon['imagen'] ?>" required name="imagen" id="habilidad" placeholder="imagen">
+        <label for="imagen">Imagen:</label>
+        <input type="file" id="fileToUpload" class="form-control" value="<?php echo $pokemon['imagen'] ?>" required name="fileToUpload" placeholder="imagen">
       </div>
       <div class="form-group">
         <label for="tipo">Tipo:</label>

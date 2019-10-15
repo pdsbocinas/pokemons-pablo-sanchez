@@ -2,7 +2,7 @@
   echo 
   "<div class='col-sm'>
     <div class='card mb-3' style='width: 18rem;'>
-      <img src=". $fila['imagen'] ." class='card-img-top' width='100%' height='auto' />
+      <img src='./upload/". $fila['imagen'] ."' class='card-img-top' width='100%' height='auto' />
       <div class='card-body'>
         <h2 class='card-title'>" .$fila['nombre']. "</h2>
         <strong>Habilidad: </strong>

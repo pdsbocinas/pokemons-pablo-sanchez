@@ -25,7 +25,7 @@
   <main>
     <?php include('./includes/header.php'); ?>
     <div class="container">
-    <form action="actionAgregar.php" method="POST">
+    <form action="actionAgregar.php" method="POST" enctype="multipart/form-data">
       <div class="form-group">
         <label for="nombre">Nombre</label>
         <input type="text" class="form-control" required id="nombre" name="nombre" aria-describedby="nombre" placeholder="Ingresa un Nombre">
@@ -39,8 +39,8 @@
         <input type="text" class="form-control" required name="habilidad_oculta" id="habilidad" placeholder="Habilidad Oculta">
       </div>
       <div class="form-group">
-        <label for="habilidad">Imagen:</label>
-        <input type="text" class="form-control" required name="imagen" id="habilidad" placeholder="imagen">
+        <label for="imagen">Imagen:</label>
+        <input type="file" id="fileToUpload" class="form-control" required name="fileToUpload" placeholder="imagen">
       </div>
       <div class="form-group">
         <label for="tipo">Tipo:</label>
